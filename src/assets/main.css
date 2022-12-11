@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #E5FFFF;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #e5ffff;
+  text-align: center;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: rgba(229, 255, 255, 0.2);
+
+}
