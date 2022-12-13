@@ -169,7 +169,7 @@ li {
   border-image: linear-gradient(to left top, #2bd9d925, #2bd9d9, #2bd9d925);
   border-image-slice: 1;
 }
-.animation-icon svg:hover {
+.animation-icon:hover svg {
   fill: #2bd9d9;
   opacity: 1;
 }

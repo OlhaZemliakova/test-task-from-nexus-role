@@ -1,35 +1,5 @@
 # test-task-from-nexus-role
 
-This template should help get you started developing with Vue 3 in Vite.
+Development of the animation interface based on the Vue. Using the Pinia store. Implement searched for animations by name, Drag&Drop to add or remove animations from quick access panel.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Deployed at [vercel](https://test-task-from-nexus-role.vercel.app/)
