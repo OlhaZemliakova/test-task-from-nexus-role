@@ -8,7 +8,7 @@ export const useMainStore = defineStore("MainStore", {
     categories,
     selectedCategoryId: categories[0].id,
     searchValue: "",
-    quickAccessList: ["twenty-one", "sixteen", "seventeen", null, null, null],
+    quickAccessList: [null, null, null, null, null, null],
   }),
   actions: {
     selectCategory(id) {
@@ -20,9 +20,21 @@ export const useMainStore = defineStore("MainStore", {
     },
     addQuickltem(index, id) {
       this.quickAccessList[index] = id;
+      this.setItemsToStorage();
     },
     deleteQuickltem(index) {
       this.quickAccessList[index] = null;
+      this.setItemsToStorage();
+    },
+    setItemsToStorage() {
+      localStorage.setItem("list", JSON.stringify(this.quickAccessList));
+    },
+    restoreFromStorage() {
+      const listData = localStorage.getItem("list");
+      if (listData) {
+        const parsedData = JSON.parse(listData);
+        this.quickAccessList = [...parsedData];
+      }
     },
   },
   getters: {

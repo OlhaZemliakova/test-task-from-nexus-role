@@ -6,10 +6,16 @@
 
 <script>
 import OptionsComponent from "./components/OptionsComponent.vue";
+import { useMainStore } from "@/stores/MainStore";
 
 export default {
   components: {
     OptionsComponent,
+  },
+  setup() {
+    const mainStore = useMainStore();
+
+    mainStore.restoreFromStorage();
   },
 };
 </script>
